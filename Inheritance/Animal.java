@@ -63,26 +63,24 @@ public class Animal {
         this.energy = 100;
     }
 
+    public String toString() {
+        return ("Species: " + this.getSpecies() + 
+                "\nEnergy: " + this.energy + 
+                "\nHunger: " + this.hunger + 
+                "\nOther: " + this.other);
+    }
+
     public static void main(String[] args) {
         // Creating Animal object with constructor 1
         Animal a1 = new Animal("Frog", 10, 50);
         
-        System.out.println("a1:\n" + 
-                "Species: " + a1.getSpecies() + 
-                "\nEnergy: " + a1.energy + 
-                "\nHunger: " + a1.hunger + 
-                "\nOther: " + a1.other + 
-                "\n");
+        System.out.println("a1:\n" + a1.toString() + '\n');
 
         System.out.println("Eating and sleeping...\n");
         a1.eat(20);
         a1.sleep();
 
-        System.out.println("a1:\n" +
-                "Species: " + a1.getSpecies() + 
-                "\nEnergy: " + a1.energy + 
-                "\nHunger: " + a1.hunger +
-                "\nOther: " + a1.other);
+        System.out.println("a1:\n" + a1.toString() + '\n');
 
 
         System.out.println("=============");
@@ -90,19 +88,13 @@ public class Animal {
         // The following lines use the overloaded constructors defined above
         // Creating Animal object with constructor 2
         Animal a2 = new Animal("Horse", 75, 75, 42);
-        System.out.println("\na2:\n" +
-                "Species: " + a2.getSpecies() +
-                "\nEnergy: " + a2.energy +
-                "\nHunger: " + a2.hunger +
-                "\nOther: " + a2.other);
+        System.out.println("a2:\n" + a2.toString() + '\n');
+
 
         // Creating Animal object with constructor 3
         Animal a3 = new Animal();
-        System.out.println("\na3:\n" +
-                "Species: " + a3.getSpecies() +
-                "\nEnergy: " + a3.energy +
-                "\nHunger: " + a3.hunger +
-                "\nOther: " + a3.other);
+        System.out.println("a3:\n" + a3.toString() + '\n');
+
 
     }
 }

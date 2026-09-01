@@ -58,6 +58,13 @@ public class Dog extends Animal {
     }
 
 
+    public String toString() {
+        return (super.toString() + 
+        "\nBreed: " + this.getBreed() + 
+        "\nTrainability: " + this.getTrainability());
+    }
+
+
     public static void main(String[] args) {
         // These lines create two dogs with different attributes (breed/trainability)
         Dog d1 = new Dog("Daschund", 0);
@@ -65,15 +72,12 @@ public class Dog extends Animal {
         Dog d2 = new Dog("Labrador", 8);
         
 
-        System.out.println("d1 is a " + d1.getSpecies() + 
-        " of breed " + d1.getBreed() + 
-        " with a trainability level of " + d1.getTrainability());
 
-        System.out.println("d2 is a " + d2.getSpecies() + 
-        " of breed " + d2.getBreed() + 
-        " with a trainability level of " + d2.getTrainability());
+        System.out.println(d1.toString() + "\n\n");
 
-        System.out.println("\n");
+        System.out.println(d2.toString() + "\n\n");
+
+
 
         d1.bark();
         d2.bark();
