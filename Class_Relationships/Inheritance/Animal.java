@@ -1,4 +1,4 @@
-package Inheritance;
+package Class_Relationships.Inheritance;
 public class Animal {
     // Instance variables (specific to each individual object)
     private String species; // Private only allows this class to see this variable
@@ -64,7 +64,7 @@ public class Animal {
     }
 
     public String toString() {
-        return ("Species: " + this.getSpecies() + 
+        return ("Species: " + this.species + 
                 "\nEnergy: " + this.energy + 
                 "\nHunger: " + this.hunger + 
                 "\nOther: " + this.other);

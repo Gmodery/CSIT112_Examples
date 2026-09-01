@@ -1,4 +1,4 @@
-package Inheritance;
+package Class_Relationships.Inheritance;
 // Dog inherits attributes and behaviors from Animal
 public class Dog extends Animal {
     private String breed;
