@@ -48,6 +48,10 @@ public class Animal {
         return this.hunger;
     }
 
+    public int getEnergy() {
+        return this.energy;
+    }
+
     // Setter method
     public void eat(int food) {
         // Reduce hunger by food, but not below zero

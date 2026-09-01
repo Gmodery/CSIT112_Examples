@@ -8,7 +8,7 @@ public class Dog extends Animal {
         // Must be the first line of a subclass constructor
         // Invokes the parent class' constructor to properly initialize the inherited state of the object
         // In this case we are calling super with predefined values
-        super("Dog", 100, 50);
+        super("Dog", 75, 50);
 
         this.breed = breed;
 
@@ -46,6 +46,15 @@ public class Dog extends Animal {
     public void eat(int food) {
         // Dogs are always hungry, so hunger never goes below 10!
         this.hunger = Math.max(this.hunger - Math.abs(food), 10);
+        System.out.println(this.breed + " has eaten!");
+    }
+
+    // Overridden method
+    // Sleep is also defined in Animal, and we want to use all of that functionality and add a little more
+    // We can invoke the parent's method with super then do our own logic
+    public void sleep() {
+        super.sleep(); // Invokes the Animal class' logic on this Dog object
+        System.out.println(this.breed + " slept!");
     }
 
 
@@ -71,11 +80,18 @@ public class Dog extends Animal {
 
         System.out.println("\n==========\n");
 
-        // These lines demonstrate the overridden method (eat())
-        System.out.println("d1 (" + d1.getBreed() + ") has a hunger level of " + d1.getHunger());
+        // These lines demonstrate the overridden methods (eat/sleep)
+        System.out.println("d1 (" + d1.getBreed() + ") has a hunger level of " + d1.getHunger() +
+                            " and an energy level of " + d1.getEnergy());
+        
         System.out.println("d1 is eating!");
         d1.eat(100);
-        System.out.println("d1 now has a hunger level of " + d1.getHunger());
+        
+        System.out.println("\nd1 is sleeping!");
+        d1.sleep();
+        
+        System.out.println("d1 now has a hunger level of " + d1.getHunger() + 
+                            " and an energy level of " + d1.getEnergy());
 
     }
 }
