@@ -31,6 +31,7 @@ class Dog extends Animal {
 
 public class Abstract {
     public static void main(String[] args) {
+        // Dog is initialized with the default constructor since one is not defined
         Dog dog = new Dog();
 
         // Instance variables can be viewed and modified when defined in the abstract class
