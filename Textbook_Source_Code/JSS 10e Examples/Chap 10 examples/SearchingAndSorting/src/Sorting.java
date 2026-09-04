@@ -16,12 +16,15 @@ public class Sorting<T>
     //-----------------------------------------------------------------
     public void selectionSort(Comparable<T>[] list)
     {
-        int min;
-        Comparable<T> temp;
+        int min; // Keeping track of minimum for each pass
+        Comparable<T> temp; // temp is needed to properly swap elements
 
+        // Every item of the list is iterated over. This outer loop sets our starting point on each iteration
         for (int index = 0; index < list.length-1; index++)
         {
-            min = index;
+            min = index; // Our minimum value index for this pass is started on whatever we begin with
+
+            // Starting at our outer loop index + 1, look forward and find the index with the smallest value
             for (int scan = index+1; scan < list.length; scan++)
                 if (list[scan].compareTo((T)list[min]) < 0)
                     min = scan;
