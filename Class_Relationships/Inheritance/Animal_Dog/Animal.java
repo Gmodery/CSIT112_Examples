@@ -1,4 +1,4 @@
-package Class_Relationships.Inheritance;
+package Class_Relationships.Inheritance.Animal_Dog;
 public class Animal {
     // Instance variables (specific to each individual object)
     private String species; // Private only allows this class to see this variable
