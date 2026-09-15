@@ -78,6 +78,10 @@ class Refrigerator extends Appliance {
         System.out.println("Turning on fridge");
     }
 
+    public void turnOff() {
+        super.turnOff();
+    }
+
     public String toString() {
         return "This is a refrigerator from " + this.manufacturer + 
         "\nIts temperature is currently set to " + this.temperatureF;
