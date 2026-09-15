@@ -1,4 +1,4 @@
-package Polymorphism;
+package Polymorphism.Polymorphism_Interface;
 
 
 class Dog implements Speaker {
@@ -29,7 +29,7 @@ class Philosopher implements Speaker {
 
 }
 
-
+// Polymorphic references can also be set up via interfaces 
 public class Polymorphism {
 
     public static void main(String[] args) {

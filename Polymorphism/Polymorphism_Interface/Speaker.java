@@ -1,4 +1,4 @@
-package Polymorphism;
+package Polymorphism.Polymorphism_Interface;
 
 // Creates an interface called Speaker
 // Remember that this defines what methods MUST be defined for all implementing classes
