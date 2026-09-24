@@ -1,4 +1,4 @@
-package Exceptions;
+package Chapter_11.Exceptions;
 
 public class DivByZero {
     public static void main(String[] args) {

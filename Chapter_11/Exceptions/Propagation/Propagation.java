@@ -1,4 +1,4 @@
-package Exceptions.Propagation;
+package Chapter_11.Exceptions.Propagation;
 
 //********************************************************************
 //  Propagation.java       Author: Lewis/Loftus

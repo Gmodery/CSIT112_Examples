@@ -1,4 +1,4 @@
-package Exceptions;
+package Chapter_11.Exceptions;
 
 import java.lang.reflect.Method;
 
@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 *
 * In VSCode, if you ctrl + click on each exception, it will open the definition
 * of that class. In here, you'll be able to see which class it extends and how it works.
+* (Note: This requires the Java extension and runtime to work)
 */
 
 public class TypesOfExceptions {

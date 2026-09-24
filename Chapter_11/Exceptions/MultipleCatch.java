@@ -1,4 +1,4 @@
-package Exceptions;
+package Chapter_11.Exceptions;
 
 import java.util.Scanner;
 
