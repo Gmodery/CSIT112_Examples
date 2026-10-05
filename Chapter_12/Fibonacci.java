@@ -1,6 +1,6 @@
 package Chapter_12;
 
-public class Fibonnaci {
+public class Fibonacci {
     public static void main(String[] args) {
         int result = fibonacci(5);
  
