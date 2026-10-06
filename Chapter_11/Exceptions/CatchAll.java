@@ -19,8 +19,10 @@ public class CatchAll {
             System.out.println("Result: " + (numerator / denominator));
         } catch (Exception ex) {
             System.out.println("Same handler regardless of the exception!");
+            ex.printStackTrace();
         } finally {
             scan.close();
+            System.out.println("Done");
         }
     }
 }
