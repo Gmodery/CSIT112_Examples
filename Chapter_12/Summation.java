@@ -12,9 +12,12 @@ public class Summation {
     // It will return the current parameter (n) + summation(n-1), 
     // which in turn returns (n) + summation(n-1), and so on
     private static int summation(int n) {
+        System.out.print("n is " + n);
         if (n == 1) {
             return 1;
         }
+
+        System.out.println("\tCalling " + n + " * factorial_recursive(" + (n - 1) + ")");
 
         return n + summation(n-1);
     }

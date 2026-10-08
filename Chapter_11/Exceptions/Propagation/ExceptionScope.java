@@ -28,7 +28,7 @@ public class ExceptionScope
             System.out.println("The call stack trace:");
             problem.printStackTrace();
             System.out.println();
-        }
+        } 
 
         System.out.println("Level 1 ending.");
     }
