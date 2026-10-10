@@ -20,3 +20,15 @@ The repository will be updated throughout the semester, so it is likely best to 
     to pull in any changes.
 
 ![](./static/cloning.gif)
+
+## Important Note for JavaFX Examples
+
+In order to launch the JavaFX examples, it is necessary to have the JavaFX library in the classpath. It is highly recommended to use VSCode when using JavaFX as it handles these dependencies more simply and is easier to get started with than other IDEs.
+
+1. Download the JavaFX library for your operating system from the [official JavaFX Website](https://gluonhq.com/products/javafx/#downloads)
+
+2. Extract the file, then copy the entire lib folder into the top level of this repository (next to this README.md)
+
+3. VSCode should resolve the dependencies without any additional steps, though if needed you may also manually add the .jar files by going to: Java Projects (in the lower left) -> Referenced Libraries -> + -> Select all of the .jar files from lib
+
+![](./static/JavaFX_Classpath.gif)
