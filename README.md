@@ -40,11 +40,11 @@ The simplest way to get started with JavaFX is by switching your runtime over to
 ```java.jdt.ls.java.home```
 Edit this in settings.json to point to the Liberica Full JDK installation directory. For example:
 ```bash
-java.jdt.ls.java.home: C:\Program Files\BellSoft\LibericaJDK-25-Full
+"java.jdt.ls.java.home": "C:\Program Files\BellSoft\LibericaJDK-25-Full"
 ```
 - Note: On Windows, backslashes need to be escaped, so on a Windows machine the above path should be written as:
     ```bash
-    java.jdt.ls.java.home: C:\\Program Files\\BellSoft\\LibericaJDK-25-Full
+    "java.jdt.ls.java.home": "C:\\Program Files\\BellSoft\\LibericaJDK-25-Full"
     ```
 
 5. Restart VSCode, then try to run one of the JavaFX examples and/or the launcher files paired with each one. 
