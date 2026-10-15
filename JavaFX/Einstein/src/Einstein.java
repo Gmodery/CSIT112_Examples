@@ -12,13 +12,11 @@ import javafx.scene.shape.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class Einstein extends Application
-{
+public class Einstein extends Application {
     //--------------------------------------------------------------------
     //  Creates and displays several shapes.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Line line = new Line(35, 60, 150, 170);
 
         Circle circle = new Circle(100, 65, 20);
@@ -29,7 +27,8 @@ public class Einstein extends Application
         rect.setStrokeWidth(2);
         rect.setFill(null);        
         
-        Ellipse ellipse = new Ellipse(200, 100, 150, 50);
+        Ellipse ellipse = new Ellipse(200, 100, 
+                                        150, 50);
         ellipse.setFill(Color.PALEGREEN);
         
         Text quote = new Text(120, 100, "Out of clutter, find " +
@@ -43,8 +42,7 @@ public class Einstein extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

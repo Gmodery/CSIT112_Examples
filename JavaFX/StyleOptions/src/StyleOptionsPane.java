@@ -14,8 +14,7 @@ import javafx.scene.text.FontWeight;
 //  Demonstrates the use of check boxes.
 //************************************************************************
 
-public class StyleOptionsPane extends VBox
-{
+public class StyleOptionsPane extends VBox {
     private Text phrase;
     private CheckBox boldCheckBox, italicCheckBox;
 
@@ -23,8 +22,7 @@ public class StyleOptionsPane extends VBox
     //  Sets up this pane with a Text object and check boxes that
     //  determine the style of the text font.
     //--------------------------------------------------------------------
-    public StyleOptionsPane()
-    {
+    public StyleOptionsPane() {
         phrase = new Text("Say it with style!");
         phrase.setFont(new Font("Helvetica", 36));
         
@@ -44,8 +42,7 @@ public class StyleOptionsPane extends VBox
     //--------------------------------------------------------------------
     //  Updates the font style of the displayed text.
     //--------------------------------------------------------------------
-    public void processCheckBoxAction(ActionEvent event)
-    {
+    public void processCheckBoxAction(ActionEvent event) {
         FontWeight weight = FontWeight.NORMAL;
         FontPosture posture = FontPosture.REGULAR;
         

@@ -13,8 +13,7 @@ import javafx.stage.Stage;
 //  Demonstrates JavaFX buttons and event handlers.
 //************************************************************************
 
-public class PushCounter extends Application
-{
+public class PushCounter extends Application {
     private int count;
     private Text countText;
     
@@ -22,8 +21,7 @@ public class PushCounter extends Application
     //  Presents a GUI containing a button and text that displays
     //  how many times the button is pushed.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         count = 0;
         countText = new Text("Pushes: 0");
 
@@ -45,14 +43,13 @@ public class PushCounter extends Application
     //--------------------------------------------------------------------
     //  Updates the counter and text when the button is pushed.
     //--------------------------------------------------------------------
-    public void processButtonPress(ActionEvent event)
-    {
+    public void processButtonPress(ActionEvent event) {
         count++;
         countText.setText("Pushes: " + count);
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args){
         launch(args);
     }
+    
 }

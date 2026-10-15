@@ -12,19 +12,18 @@ import javafx.stage.Stage;
 //  Demonstrates a the use of Image and ImageView objects.
 //************************************************************************
 
-public class ImageDisplay extends Application
-{
+public class ImageDisplay extends Application {
     //--------------------------------------------------------------------
     //  Displays an image centered in a window.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Image img = new Image("gull.jpg");
         ImageView imgView = new ImageView(img);
 
         StackPane pane = new StackPane(imgView);
         pane.setStyle("-fx-background-color: cornsilk");
-        imgView.setViewport(new Rectangle2D(200, 80, 70, 60));
+        imgView.setViewport(new Rectangle2D(200, 80, 
+                                        170, 160));
         
         Scene scene = new Scene(pane, 500, 350);
 

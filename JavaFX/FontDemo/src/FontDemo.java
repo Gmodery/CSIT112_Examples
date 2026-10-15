@@ -14,13 +14,11 @@ import javafx.stage.Stage;
 //  Demonstrates the creation and use of fonts.
 //************************************************************************
 
-public class FontDemo extends Application
-{
+public class FontDemo extends Application {
     //--------------------------------------------------------------------
     //  Displays three Text objects using various font styles.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Font font1 = new Font("Courier", 36);
         Font font2 = Font.font("Times", FontWeight.BOLD,
                 FontPosture.ITALIC, 28);
@@ -46,8 +44,7 @@ public class FontDemo extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

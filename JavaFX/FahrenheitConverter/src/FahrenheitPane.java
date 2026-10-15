@@ -12,8 +12,7 @@ import javafx.scene.text.Font;
 //  Demonstrates the use of a TextField and a GridPane.
 //************************************************************************
 
-public class FahrenheitPane extends GridPane
-{
+public class FahrenheitPane extends GridPane {
     private Label result;
     private TextField fahrenheit;
 
@@ -21,8 +20,7 @@ public class FahrenheitPane extends GridPane
     //  Sets up a GUI containing a labeled text field for converting
     //  temperatures in Fahrenheit to Celsius.
     //--------------------------------------------------------------------
-    public FahrenheitPane()
-    {
+    public FahrenheitPane() {
         Font font = new Font(18);
         
         Label inputLabel = new Label("Fahrenheit:");
@@ -58,8 +56,7 @@ public class FahrenheitPane extends GridPane
     //  Computes and displays the converted temperature when the user
     //  presses the return key while in the text field.
     //--------------------------------------------------------------------
-    public void processReturn(ActionEvent event)
-    {
+    public void processReturn(ActionEvent event) {
         int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
         int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
         result.setText(celsiusTemp + "");

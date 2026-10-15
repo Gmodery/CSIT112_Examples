@@ -11,13 +11,11 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
 
-public class Snowman extends Application
-{
+public class Snowman extends Application {
     //--------------------------------------------------------------------
     //  Presents a snowman scene.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {        
+    public void start(Stage primaryStage) {        
         Ellipse base = new Ellipse(80, 210, 80, 60);
         base.setFill(Color.WHITE);
 

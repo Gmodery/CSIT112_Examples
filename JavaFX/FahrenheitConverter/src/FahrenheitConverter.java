@@ -8,13 +8,11 @@ import javafx.stage.Stage;
 //  Demonstrates the use of a TextField and a GridPane.
 //************************************************************************
 
-public class FahrenheitConverter extends Application
-{
+public class FahrenheitConverter extends Application {
     //--------------------------------------------------------------------
     //  Launches the temperature converter application.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Scene scene = new Scene(new FahrenheitPane(), 300, 150);
         
         primaryStage.setTitle("Fahrenheit Converter");
@@ -22,8 +20,7 @@ public class FahrenheitConverter extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

@@ -9,13 +9,11 @@ import javafx.stage.Stage;
 //  Demonstrates the use of check boxes.
 //************************************************************************
 
-public class StyleOptions extends Application
-{
+public class StyleOptions extends Application {
     //--------------------------------------------------------------------
     //  Creates and presents the program window.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         StyleOptionsPane pane = new StyleOptionsPane();
         pane.setAlignment(Pos.CENTER);
         pane.setStyle("-fx-background-color: skyblue");
@@ -27,8 +25,7 @@ public class StyleOptions extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

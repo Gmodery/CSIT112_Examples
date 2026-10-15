@@ -12,8 +12,7 @@ import javafx.stage.Stage;
 //  Demonstrates the use of one handler for multiple buttons.
 //************************************************************************
 
-public class RedOrBlue extends Application
-{
+public class RedOrBlue extends Application {
     private Button redButton, blueButton;
     private FlowPane pane;
     
@@ -21,8 +20,7 @@ public class RedOrBlue extends Application
     //  Presents a GUI with two buttons that control the color of the
     //  pane background.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         redButton = new Button("Red!");
         redButton.setOnAction(this::processColorButton);
         
@@ -45,16 +43,14 @@ public class RedOrBlue extends Application
     //  Determines which button was pressed and sets the pane color
     //  accordingly.
     //--------------------------------------------------------------------
-    public void processColorButton(ActionEvent event)
-    {
+    public void processColorButton(ActionEvent event) {
         if (event.getSource() == redButton)
             pane.setStyle("-fx-background-color: crimson");
         else
             pane.setStyle("-fx-background-color: deepskyblue");            
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }
