@@ -11,21 +11,18 @@ import javafx.stage.Stage;
 //  Demonstrates the use of loops and conditionals to draw.
 //************************************************************************
 
-public class Bullseye extends Application
-{
+public class Bullseye extends Application {
     //--------------------------------------------------------------------
     //  Displays a target using concentric black and white circles
     //  and a red center.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Group root = new Group();
         Color ringColor = Color.BLACK;
         Circle ring = null;
         int radius = 150;        
         
-        for (int count = 1; count <= 8; count++)
-        {
+        for (int count = 1; count <= 8; count++) {
             ring = new Circle(160, 160, radius);
             ring.setFill(ringColor);
             root.getChildren().add(ring);            
@@ -47,8 +44,7 @@ public class Bullseye extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

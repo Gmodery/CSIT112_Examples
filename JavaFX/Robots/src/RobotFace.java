@@ -8,14 +8,12 @@ import javafx.scene.shape.Rectangle;
 //  Presents the face of a robot.
 //************************************************************************
 
-public class RobotFace extends Group
-{
+public class RobotFace extends Group {
     //--------------------------------------------------------------------
     //  Sets up the elements that make up the robots face, positioned
     //  in the upper left corner of the coordinate system.
     //--------------------------------------------------------------------
-    public RobotFace()
-    {
+    public RobotFace() {
         Rectangle head = new Rectangle(5, 0, 100, 70);
         head.setFill(Color.SILVER);
         head.setArcHeight(10);

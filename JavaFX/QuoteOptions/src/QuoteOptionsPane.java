@@ -14,8 +14,7 @@ import javafx.scene.text.Font;
 //  Demonstrates the use of radio buttons.
 //************************************************************************
 
-public class QuoteOptionsPane extends HBox
-{
+public class QuoteOptionsPane extends HBox {
     private Text quote;
     private String philosophyQuote, carpentryQuote, comedyQuote;
     private RadioButton philosophyButton, carpentryButton, comedyButton;
@@ -24,11 +23,10 @@ public class QuoteOptionsPane extends HBox
     //  Sets up this pane with a Text object and radio buttons that
     //  determine which phrase is displayed.
     //--------------------------------------------------------------------
-    public QuoteOptionsPane()
-    {
+    public QuoteOptionsPane() {
         philosophyQuote = "I think, therefore I am.";
         carpentryQuote = "Measure twice. Cut once.";
-        comedyQuote = "Take my wife, please.";
+        comedyQuote = "Something about a chicken \ncrossing a road.";
         
         quote = new Text(philosophyQuote);
         quote.setFont(new Font("Helvetica", 24));
@@ -63,8 +61,7 @@ public class QuoteOptionsPane extends HBox
     //--------------------------------------------------------------------
     //  Updates the content of the displayed text.
     //--------------------------------------------------------------------
-    public void processRadioButtonAction(ActionEvent event)
-    {
+    public void processRadioButtonAction(ActionEvent event) {
         if (philosophyButton.isSelected())
             quote.setText(philosophyQuote);
         else if (carpentryButton.isSelected())

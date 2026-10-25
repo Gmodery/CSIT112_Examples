@@ -12,8 +12,7 @@ import javafx.stage.Stage;
 //  Demonstrates the handling of mouse press and mouse drag events.
 //************************************************************************
 
-public class RubberLines extends Application
-{
+public class RubberLines extends Application {
     private Line currentLine;
     private Group root;
 
@@ -21,8 +20,7 @@ public class RubberLines extends Application
     //  Displays an initially empty scene, waiting for the user to
     //  draw lines with the mouse.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         root = new Group();
         
         Scene scene = new Scene(root, 500, 300, Color.BLACK);
@@ -38,8 +36,7 @@ public class RubberLines extends Application
     //--------------------------------------------------------------------
     //  Adds a new line to the scene when the mouse button is pressed.
     //--------------------------------------------------------------------
-    public void processMousePress(MouseEvent event)
-    {
+    public void processMousePress(MouseEvent event) {
         currentLine = new Line(event.getX(), event.getY(), event.getX(),
             event.getY());
         currentLine.setStroke(Color.CYAN);
@@ -51,14 +48,12 @@ public class RubberLines extends Application
     //  Updates the end point of the current line as the mouse is
     //  dragged, creating the rubber band effect.
     //--------------------------------------------------------------------
-    public void processMouseDrag(MouseEvent event)
-    {
+    public void processMouseDrag(MouseEvent event) {
         currentLine.setEndX(event.getX());
         currentLine.setEndY(event.getY());
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

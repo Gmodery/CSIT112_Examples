@@ -10,13 +10,11 @@ import javafx.stage.Stage;
 //  Demonstrates graphical transformations.
 //************************************************************************
 
-public class Robots extends Application
-{
+public class Robots extends Application {
     //--------------------------------------------------------------------
     //  Displays three robot faces, applying various transformations.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         RobotFace robot1 = new RobotFace();
         robot1.setTranslateX(70);
         robot1.setTranslateY(40);
@@ -41,8 +39,7 @@ public class Robots extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

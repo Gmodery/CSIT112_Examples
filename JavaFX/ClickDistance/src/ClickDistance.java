@@ -13,8 +13,7 @@ import javafx.stage.Stage;
 //  Demonstrates the handling of a mouse click event.
 //************************************************************************
 
-public class ClickDistance extends Application
-{
+public class ClickDistance extends Application {
     private Line line;
     private Text distanceText;
     
@@ -22,8 +21,7 @@ public class ClickDistance extends Application
     //  Shows the distance between the origin (0, 0) and the point where
     //  the mouse is clicked.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         line = new Line(0, 0, 0, 0);
         distanceText = new Text(150, 30, "Distance:  --");
         
@@ -42,8 +40,7 @@ public class ClickDistance extends Application
     //  Resets the end point of the line to the location of the mouse
     //  click event and updates the distance displayed.
     //--------------------------------------------------------------------
-    public void processMouseClick(MouseEvent event)
-    {
+    public void processMouseClick(MouseEvent event) {
         double clickX = event.getX();
         double clickY = event.getY();
         
@@ -56,8 +53,7 @@ public class ClickDistance extends Application
         distanceText.setText("Distance:  " + distanceStr);
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

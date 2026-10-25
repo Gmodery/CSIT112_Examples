@@ -9,13 +9,11 @@ import javafx.stage.Stage;
 //  Demonstrates the use of radio buttons.
 //************************************************************************
 
-public class QuoteOptions extends Application
-{
+public class QuoteOptions extends Application {
     //--------------------------------------------------------------------
     //  Creates and presents the program window.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         QuoteOptionsPane pane = new QuoteOptionsPane();
         pane.setAlignment(Pos.CENTER);
         pane.setStyle("-fx-background-color: lightgreen");
@@ -27,8 +25,7 @@ public class QuoteOptions extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }
