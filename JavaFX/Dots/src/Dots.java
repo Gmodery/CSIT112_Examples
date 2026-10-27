@@ -15,8 +15,7 @@ import javafx.stage.Stage;
 //  a double mouse click.
 //************************************************************************
 
-public class Dots extends Application
-{
+public class Dots extends Application {
     private Color[] colorList = {Color.RED, Color.CYAN, Color.MAGENTA,
             Color.YELLOW, Color.LIME, Color.WHITE};
     
@@ -29,8 +28,7 @@ public class Dots extends Application
     //  Displays a scene on which the user can add colored dots with
     //  mouse clicks.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         countText = new Text(20, 30, "Count: 0");
         countText.setFont(new Font(18));
         countText.setFill(Color.WHITE);
@@ -50,18 +48,15 @@ public class Dots extends Application
     //  colors rotate through a set list of colors. A double click clears
     //  the dots and resets the counter.
     //--------------------------------------------------------------------
-    public void processMouseClick(MouseEvent event)
-    {
-        if (event.getClickCount() == 2)  // double click
-        {
+    public void processMouseClick(MouseEvent event) {
+        if (event.getClickCount() == 2) { // double click
             count = 0;
             colorIndex = 0;
             root.getChildren().clear();
             countText.setText("Count: 0");
             root.getChildren().add(countText);
         }
-        else
-        {
+        else {
             Circle circle = new Circle(event.getX(), event.getY(), 10);
             circle.setFill(colorList[colorIndex]);
             root.getChildren().add(circle);
@@ -73,8 +68,7 @@ public class Dots extends Application
         }
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

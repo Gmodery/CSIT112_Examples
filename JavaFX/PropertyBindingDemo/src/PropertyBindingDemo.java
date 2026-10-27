@@ -14,15 +14,13 @@ import javafx.stage.Stage;
 //  Demonstrates the ability to bind one property to another.
 //************************************************************************
 
-public class PropertyBindingDemo extends Application
-{
+public class PropertyBindingDemo extends Application {
     //--------------------------------------------------------------------
     //  Displays the width and height of the scene, as well as a circle
     //  in the center of the scene. The scene is updated using property
     //  bindings as the window is resized.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Group root = new Group();
         Scene scene = new Scene(root, 300, 200, Color.SKYBLUE);
 
@@ -46,8 +44,7 @@ public class PropertyBindingDemo extends Application
         primaryStage.show();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

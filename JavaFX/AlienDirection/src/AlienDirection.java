@@ -13,8 +13,7 @@ import javafx.stage.Stage;
 //  Demonstrates the handling of keyboard events.
 //************************************************************************
 
-public class AlienDirection extends Application
-{
+public class AlienDirection extends Application {
     public final static int JUMP = 10;
     
     private ImageView imageView;
@@ -22,8 +21,7 @@ public class AlienDirection extends Application
     //--------------------------------------------------------------------
     //  Displays an image that can be moved using the arrow keys.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         Image alien = new Image("alien.png");
         
         imageView = new ImageView(alien);
@@ -44,10 +42,8 @@ public class AlienDirection extends Application
     //  Modifies the position of the image view when an arrow key is
     //  pressed.
     //--------------------------------------------------------------------
-    public void processKeyPress(KeyEvent event)
-    {
-        switch (event.getCode())
-        {
+    public void processKeyPress(KeyEvent event) {
+        switch (event.getCode()) {
             case UP:
                 imageView.setY(imageView.getY() - JUMP);
                 break;
@@ -65,8 +61,7 @@ public class AlienDirection extends Application
         }
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

@@ -20,8 +20,7 @@ import javafx.stage.Stage;
 //  Demonstrates the use of color picker and date picker controls.
 //************************************************************************
 
-public class PickerDemo extends Application
-{
+public class PickerDemo extends Application {
     private Text message;
     private DatePicker datePicker;
     private ColorPicker colorPicker;
@@ -30,8 +29,7 @@ public class PickerDemo extends Application
     //  Allows the user to select a date and a color. A Text object
     //  displays the day of the week in the color specified.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         datePicker = new DatePicker(LocalDate.now());
         datePicker.setOnAction(this::processDateChoice);
         
@@ -63,8 +61,7 @@ public class PickerDemo extends Application
     //  Gets the value of the date from the date picker and updates the
     //  message with the corresponding day of the week.
     //--------------------------------------------------------------------
-    public void processDateChoice(ActionEvent event)
-    {
+    public void processDateChoice(ActionEvent event) {
         LocalDate date = datePicker.getValue();
         message.setText("HAPPY " + date.getDayOfWeek());
     }
@@ -73,13 +70,11 @@ public class PickerDemo extends Application
     //  Gets the color specified in the color picker and sets the
     //  color of the displayed message.
     //--------------------------------------------------------------------
-    public void processColorChoice(ActionEvent event)
-    {
+    public void processColorChoice(ActionEvent event) {
         message.setFill(colorPicker.getValue());
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

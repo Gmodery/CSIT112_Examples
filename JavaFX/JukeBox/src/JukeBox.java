@@ -18,8 +18,7 @@ import javafx.stage.Stage;
 //  Demonstrates the use of a combo box and audio clips.
 //************************************************************************
 
-public class JukeBox extends Application
-{
+public class JukeBox extends Application {
     private ChoiceBox<String> choice;
     private AudioClip[] tunes;
     private AudioClip current;
@@ -29,8 +28,7 @@ public class JukeBox extends Application
     //  Presents an interface that allows the user to select and play
     //  a tune from a drop down box.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         String[] names = {"Western Beat", "Classical Melody",
             "Jeopardy Theme", "Eighties Jam", "New Age Rythm",
             "Lullaby", "Alfred Hitchcock's Theme"};
@@ -79,8 +77,7 @@ public class JukeBox extends Application
     //  When a choice box selection is made, stops the current clip (if
     //  one was playing) and sets the current tune.
     //--------------------------------------------------------------------
-    public void processChoice(ActionEvent event)
-    {
+    public void processChoice(ActionEvent event) {
         current.stop();
         current = tunes[choice.getSelectionModel().getSelectedIndex()];
     }
@@ -90,16 +87,14 @@ public class JukeBox extends Application
     //  either case. If the play button was pressed, (re)starts the
     //  current clip.
     //--------------------------------------------------------------------
-    public void processButtonPush(ActionEvent event)
-    {
+    public void processButtonPush(ActionEvent event) {
         current.stop();
         
         if (event.getSource() == playButton)
             current.play();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

@@ -13,27 +13,23 @@ import javafx.stage.Stage;
 //  as text input dialog boxes.
 //************************************************************************
 
-public class EvenOdd extends Application
-{
+public class EvenOdd extends Application {
     //--------------------------------------------------------------------
     //  Prompts the user for an integer, informs the user if that value
     //  is even or odd, then asks if the user would like to process
     //  another value. All interaction is performed using dialog boxes.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage) throws Exception
-    {
+    public void start(Stage primaryStage) throws Exception {
         boolean doAnother = true;
 
-        while (doAnother)
-        {
+        while (doAnother) {
             TextInputDialog inputDialog = new TextInputDialog();
             inputDialog.setHeaderText(null);
             inputDialog.setTitle(null);
             inputDialog.setContentText("Enter an integer:");
             Optional<String> numString = inputDialog.showAndWait();
 
-            if (numString.isPresent())
-            {
+            if (numString.isPresent()) {
                 int num = Integer.parseInt(numString.get());
 
                 String result = "That number is " +
@@ -58,8 +54,7 @@ public class EvenOdd extends Application
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }
