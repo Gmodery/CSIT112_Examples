@@ -1,6 +1,7 @@
-package Chapter_13.Linked_Lists;
+package Chapter_13.Linked_Lists.BookShelf;
 
-// The Book class holds details pertaining to the Book itself
+// The Book class holds details 
+// pertaining to the Book itself
 public class Book {
     private String title;
 

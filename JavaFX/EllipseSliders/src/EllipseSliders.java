@@ -14,8 +14,7 @@ import javafx.stage.Stage;
 //  Demonstrates the use of slider controls and property binding.
 //************************************************************************
 
-public class EllipseSliders extends Application
-{
+public class EllipseSliders extends Application {
     private Ellipse ellipse;
     private Slider xSlider, ySlider;
 
@@ -23,8 +22,7 @@ public class EllipseSliders extends Application
     //  Displays an ellipse with sliders that control the width and
     //  height of the ellipse.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         ellipse = new Ellipse(250, 150, 150, 75);
         ellipse.setFill(Color.SALMON);
         
@@ -54,8 +52,7 @@ public class EllipseSliders extends Application
         primaryStage.show();
     }
     
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

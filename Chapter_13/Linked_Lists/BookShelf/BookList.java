@@ -1,4 +1,4 @@
-package Chapter_13.Linked_Lists;
+package Chapter_13.Linked_Lists.BookShelf;
 
 // BookList is a collection of Books (BookNodes)
 public class BookList {
